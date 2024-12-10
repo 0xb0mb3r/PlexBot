@@ -19,7 +19,7 @@ PlexBot is a WhatsApp bot built to restart the StreamBoy TV server. Thatâ€™s itâ
    ```bash
    npm install -g pm2
    ```
-3. **Venom Bot**: Venom handles WhatsApp Web authentication and bot interaction. Dependencies are included in the `npm install` step.
+3. **[Venom Bot](https://github.com/orkestral/venom)**: Venom handles WhatsApp Web authentication and bot interaction. Dependencies are included in the `npm install` step.
 
 ---
 
