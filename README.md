@@ -19,6 +19,7 @@ PlexBot is a WhatsApp bot built to restart the StreamBoy TV server. That’s it�
    ```bash
    npm install -g pm2
    ```
+3. **Venom Bot**: Venom handles WhatsApp Web authentication and bot interaction. Dependencies are included in the `npm install` step.
 
 ---
 
@@ -35,17 +36,21 @@ cd PlexBot
 npm install
 ```
 
-### 3. Log In with WhatsApp
-Run the login script to set up your session:
+### 3. Set Up WhatsApp Authentication with Venom Bot
+The first time you start the bot, Venom Bot will prompt you to authenticate via WhatsApp Web. A QR code will be displayed in the terminal. Scan this QR code using your WhatsApp account.
+
+Venom Bot will store the session data in the `tokens` folder for future use.
+
+### 4. Log In to StreamBoy Dashboard
+Run the login script to log in to the StreamBoy TV dashboard:
 ```bash
 node login.js
 ```
 
-- This opens a browser in non-headless mode. Log in to WhatsApp manually.
-- Make sure to select "Remember Me" so your session persists.
-- A `user_data` folder will be created to store your session data.
+- This opens a browser in non-headless mode. Log in manually with your credentials and ensure you select the "Remember Me" option.
+- A `user_data` folder will be created to store your session data for the dashboard.
 
-### 4. Configure the Group Chat IDs
+### 5. Configure the Group Chat IDs
 Use the bot’s logging feature to identify the group chat IDs. Any messages sent to group chats will be logged in `messages.log` in the following format:
 ```
 GROUP_ID | GROUP_NAME | MESSAGE
@@ -86,15 +91,10 @@ pm2 logs plexbot
 
 ## File Structure
 - `bot.js`: The main script that handles commands, interactions, and logging.
-- `login.js`: Sets up the WhatsApp session.
+- `login.js`: Logs in to the StreamBoy TV dashboard and sets up the session.
 - `messages.log`: Logs all messages from monitored group chats (empty by default).
-- `user_data/`: Stores session data for persistent logins. (Excluded from this repository for security reasons.)
-
----
-
-## Notes on Sensitive Data
-- `user_data/`: This folder contains private session data. Do not share or upload it to any repository.
-- **Logs**: The `messages.log` file may contain sensitive group messages. Ensure it’s reviewed or excluded before sharing.
+- `user_data/`: Stores session data for the StreamBoy TV dashboard login. (Excluded from this repository for security reasons.)
+- `tokens/`: Stores WhatsApp session data for Venom Bot. (Excluded from this repository for security reasons.)
 
 ---
 
