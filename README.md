@@ -26,7 +26,7 @@ PlexBot is a WhatsApp bot built to restart the StreamBoy TV server. Thatâ€™s itâ
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/0xb0mb3r/PlexBot.git
 cd PlexBot
 ```
 
