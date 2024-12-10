@@ -19,8 +19,7 @@ PlexBot is a WhatsApp bot built to restart the StreamBoy TV server. Thatâ€™s itâ
    ```bash
    npm install -g pm2
    ```
-3. **[Venom Bot](https://github.com/orkestral/venom)**: Venom handles WhatsApp Web authentication and bot interaction. Dependencies are included in the `npm install` step.
-
+### 3. **Venom Bot**: Venom handles WhatsApp Web authentication and bot interaction. Dependencies are included in the npm install step.
 ---
 
 ## Installation and Setup
@@ -36,7 +35,7 @@ cd PlexBot
 npm install
 ```
 
-### 3. Set Up WhatsApp Authentication with Venom Bot
+### 3. Set Up WhatsApp Authentication with [Venom Bot](https://github.com/orkestral/venom)
 The first time you start the bot, Venom Bot will prompt you to authenticate via WhatsApp Web. A QR code will be displayed in the terminal. Scan this QR code using your WhatsApp account.
 
 Venom Bot will store the session data in the `tokens` folder for future use.
