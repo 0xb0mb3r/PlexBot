@@ -92,8 +92,8 @@ pm2 logs plexbot
 - `bot.js`: The main script that handles commands, interactions, and logging.
 - `login.js`: Logs in to the StreamBoy TV dashboard and sets up the session.
 - `messages.log`: Logs all messages from monitored group chats (empty by default).
-- `user_data/`: Stores session data for the StreamBoy TV dashboard login. (Excluded from this repository for security reasons.)
-- `tokens/`: Stores WhatsApp session data for Venom Bot. (Excluded from this repository for security reasons.)
+- `user_data/`: Stores session data for the StreamBoy TV dashboard login. 
+- `tokens/`: Stores WhatsApp session data for Venom Bot. 
 
 ---
 
