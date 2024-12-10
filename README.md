@@ -16,6 +16,7 @@ PlexBot is a WhatsApp bot built to restart the StreamBoy TV server. Thatâ€™s itâ
 ## Prerequisites
 1. **Node.js**: Install Node.js (v18 or above).
 2. **PM2**: Install PM2 for continuous operation.
+   
    ```bash
    npm install -g pm2
    ```
